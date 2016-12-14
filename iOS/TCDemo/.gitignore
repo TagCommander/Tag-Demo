@@ -1,0 +1,15 @@
+build/
+DerivedData/
+
+*.pbxuser
+
+*.moved-aside
+*.xcuserstate
+
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+xcuserdata
+.idea

@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.tagcommander.tcdemo.tcdemo.RestaurantDetail">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name: "
+        android:id="@+id/name_label"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_text"
+        android:layout_alignTop="@+id/name_label"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text=""
+        android:layout_toRightOf="@+id/name_label"
+        android:layout_toEndOf="@+id/name_label"
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Food Type: "
+        android:id="@+id/type_label"
+        android:layout_below="@+id/name_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/type_text"
+        android:layout_alignBottom="@+id/type_label"
+        android:layout_toRightOf="@+id/type_label"
+        android:layout_toEndOf="@+id/type_label"
+        android:text=""
+        android:layout_alignParentRight="false"
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rating: "
+        android:id="@+id/rating_label"
+        android:layout_below="@+id/type_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/rating_bar"
+        android:gravity="center_vertical"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rating_bar"
+        android:layout_below="@+id/type_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Waiting Time:"
+        android:id="@+id/wait_label"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/wait_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/wait_bar"
+        android:layout_toLeftOf="@+id/wait_bar"
+        android:layout_toStartOf="@+id/wait_bar"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wait_bar"
+        android:layout_below="@+id/rating_bar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/photo_image"
+        android:layout_below="@+id/wait_bar"
+        android:src="@drawable/benjis"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/wait_bar"
+        android:layout_alignEnd="@+id/wait_bar"
+        android:contentDescription="@string/title_map"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:id="@+id/location_btn"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/send_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/photo_image"
+        android:layout_alignEnd="@+id/photo_image"/>
+
+</RelativeLayout>

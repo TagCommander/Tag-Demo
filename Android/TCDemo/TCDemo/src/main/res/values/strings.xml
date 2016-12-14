@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TCDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_restaurant_list">Restaurant</string>
+    <string name="title_map">Map</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_activity_restaurant_detail">RestaurantDetail</string>
+
+</resources>
