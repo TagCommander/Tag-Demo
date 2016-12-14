@@ -5,4 +5,4 @@ In this project you should especially check the following files:
 
 [TCAppDelegate.m : application: didFinishLaunchingWithOptions:](TCDemo/TCDemo/TCAppDelegate.m)
 
-[TCAskSegmentation.m](TCDemo/TCDemo/TagCommanderExample.m)
+[TagCommanderExample.m](TCDemo/TCDemo/TagCommanderExample.m)
