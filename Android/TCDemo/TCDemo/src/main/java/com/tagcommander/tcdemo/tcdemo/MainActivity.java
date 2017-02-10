@@ -5,7 +5,6 @@ import android.app.ActionBar;
 import android.app.FragmentTransaction;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
@@ -15,8 +14,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.Menu;
-
-import com.tagcommander.lib.TCSDKConstants;
 
 /*
  * The purpose of TCDemo is to show you how to tag easily an Android application
