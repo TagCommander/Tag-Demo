@@ -10,9 +10,11 @@
 #define TagCommander_TCCoreConstants_h
 
 #import <Foundation/Foundation.h>
+#import "CoreGenerated.h"
 
 #define TC_UNIT_TESTS
 #define TC_FUNCTIONAL_TESTS
+
 
 #pragma mark - misc
 extern NSString *const kTCFileOfflineHits;
@@ -67,10 +69,13 @@ extern NSString *const kTCUserInfo_RequestID;
 
 #pragma mark - predefined dynamic variables
 extern NSString *const kTCPredefinedVariable_UniqueID;
+
+#ifdef TC_USE_IDFA
 extern NSString *const kTCPredefinedVariable_IDFA;
 extern NSString *const kTCPredefinedVariable_IDFV;
 extern NSString *const kTCPredefinedVariable_isTrackingEnabled;
 extern NSString *const kTCPredefinedVariable_LimitUserTrackingEnabled;
+#endif
 
 extern NSString *const kTCPredefinedVariable_Connexion;
 

@@ -24,7 +24,7 @@
 /**
  * @brief Singleton GCD Macro
  */
-// source: http://lukeredpath.co.uk/blog/a-note-on-objective-c-singletons.html
+// source: http://lukeredpath.co.uk/blog/2011/07/01/a-note-on-objective-c-singletons/
 #define SINGLETON_CLASS_GCD(classname)                        \
 \
 + (classname *)sharedInstance {                      \

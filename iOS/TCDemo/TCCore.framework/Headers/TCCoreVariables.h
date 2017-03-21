@@ -13,7 +13,9 @@
 
 SINGLETON_CLASS_H(TCCoreVariables)
 
+#ifdef TC_USE_IDFA
 - (void) initializeAllCoreVariables;
+#endif
 - (id) reinit;
 
 @property (nonatomic, retain) TCDynamicStore *dynamicStore;

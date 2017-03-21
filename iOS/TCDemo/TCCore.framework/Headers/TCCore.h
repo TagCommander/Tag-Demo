@@ -14,7 +14,7 @@ FOUNDATION_EXPORT double TCCoreVersionNumber;
 //! Project version string for TCCore.
 FOUNDATION_EXPORT const unsigned char TCCoreVersionString[];
 
-#import <TCCore/generated.h>
+#import <TCCore/CoreGenerated.h>
 #import <TCCore/TCMacros.h>
 #import <TCCore/ITCEventListenerDelegate.h>
 #import <TCCore/TCLogger.h>
